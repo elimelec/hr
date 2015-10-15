@@ -31,4 +31,15 @@ As a department director, I want to be notified when someone applies for a job
 in my department and has required skills for the job.
 
 As a department director, I want to be present when the person who applies for 
-a job is interviewed.
+a job is interviewed to be able to observe if he has the required skills.
+
+
+As a HR director, I want to be able to access someone resume anytime.
+
+As a HR director, I want to be able to mark a person as favourite for the job.
+
+As a HR director, I want to be able to add comments on the resume to be easier 
+for me to ask questions at the interview.
+
+
+

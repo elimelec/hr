@@ -26,13 +26,14 @@ regarding his skills.
 As a general director, I want to be notified if a candidate has recommendations
 or worked at a competitor.
 
+As a general director, I want to be able to accept or reject an anouncement for
+a job.
 
 As a department director, I want to be notified when someone applies for a job 
 in my department and has required skills for the job.
 
 As a department director, I want to be present when the person who applies for 
 a job is interviewed to be able to observe if he has the required skills.
-
 
 As a HR director, I want to be able to access someone resume anytime.
 
@@ -41,5 +42,14 @@ As a HR director, I want to be able to mark a person as favourite for the job.
 As a HR director, I want to be able to add comments on the resume to be easier 
 for me to ask questions at the interview.
 
+As a recruiter, I want to be able to see a resume anytime and mark on the resume
+what I like or not about it. 
 
+As a recruiter, I want to be able to announce a job on social media, newspapers, etc.
+
+As a recruiter, I want to be able to recommend a candidate for a position in the company.
+
+Administrator
+
+Viewer
 

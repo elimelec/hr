@@ -15,6 +15,15 @@ ma bag pe site si ma uit la fiecare in parte, deschid un terminal, scriu un
 scrip si il rulez. Aia de la marketing nu au decat sa mearga pe site, eu unul
 nu.
 
+Ca si director al uni departament vreau sa pot adaga o pozitie pentru departamentul meu, sa pot vedea toti candidatii, sa accept un candidat, sa inchid pozitia, sau sa o deschid daca a fost inchisa deja, sa pot alege cate locuri sunt disponibile pentru acea pozitie. De asemenea vreau sa pot sa editez aceasta pozitie.
+
 Ca recruiter, vreau sa stiu cat salar a avut candidatul inainte ca sa il pot
 fraieri si sa ii dau doar 100 RON in plus. Ii mai zic si ca e salar competitiv.
 Si ui asa iau eu bonus mai mare.
+
+Ca si recruiter vreau sa stiu, primind mail despre toate schimbarile ce apar in legatura cu pozitiile de care ma ocup.
+
+Ca si recruiter vreau sa pot sa adaug sau sa modific datele unui candidat pentru o anumita pozitie.
+
+Ca si administrator de sistem vreau sa pot sa adaug, sterg sau sa editez utilizatorii site-ului.
+

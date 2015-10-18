@@ -23,9 +23,26 @@ pozitie.
 
 ##Director departament
 
-Ca si director al unui departament vreau sa pot adaga o pozitie pentru departamentul meu, sa pot vedea toti candidatii, sa accept un candidat, sa inchid pozitia, sau sa o deschid daca a fost inchisa deja, sa pot alege cate locuri sunt disponibile pentru acea pozitie. De asemenea vreau sa pot sa editez aceasta pozitie.
+Ca director de departament, vreau sa pot vedea toti candidatii care au
+aplicat la o pozitie pentru departamentul meu.
 
-Ca si director al unui departament vreau sa pot filtra candidatii pentru o anumita pozitie si sa i am ordonati in functie de ratingul de la recruieteri
+Ca director de departament, vreau sa accept sau sa resping un candidat
+care a aplicat la o pozitie pentru departamentul meu.
+
+Ca director de departament, vreau sa adaug o pozitie pentru departamentul meu.
+
+Ca director de departament, vreau sa inchid sau sa redeschid o pozitie a 
+departamentul meu.
+
+Ca director de departament, vreau sa modific numarul de locuri disponibile pentru
+o pozitie din departamentul meu.
+
+Ca director de departament, vreau sa editez o pozitie a departamentul meu.
+
+Ca director de departament, vreau sa pot filtra candidatii pentru o anumita pozitie.
+
+Ca director de departament, vreau sa ordonez candidatii pentru o pozitie in functie de
+ratingul de la recruieteri
 
 Ca director de departament, vreau sa fiu notificat daca cineva aplica
 la o pozitie in departamentul meu si daca are calificarea necesara.

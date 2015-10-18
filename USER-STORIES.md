@@ -32,3 +32,35 @@ Ca si recruiter vreau sa pot scrie comentarii de bine sau de rau in privinta uni
 Ca si administrator de sistem vreau sa pot sa adaug, sterg sau sa editez utilizatorii site-ului.
 
 Ca si vizitator al acestui site, vreau sa pot sa vizualizez toate poziile deschise, sa pot sa le filtrez si sa aplic la cate poziitii vreau eu.
+
+Ca director general, vreau sa accept sau sa resping un candidat in
+legatura cu calificarea lui.
+
+Ca director general, vreau sa fiu notificat daca un candidat are
+recomandare sau daca a lucrat la un competitor.
+
+Ca director general, vreau sa accept sau sa resping un anunt pentru o
+pozitie.
+
+Ca director de departament, vreau sa fiu notificat daca cineva aplica
+la o pozitie in departamentul meu si daca are calificarea necesara.
+
+Ca director de departament, vreau sa fiu prezent cand candidatul este
+intervievat pentru a observa daca are calificarea necesara.
+
+Ca director HR, vreau sa pot accesa oricand cv-ul cuiva.
+
+Ca director HR, vreau sa pot marca ca favorit o persoana pentru o
+pozitie.
+
+Ca director HR, vreau sa adaug comentariu la cv-ul candidatului pentru
+a-mi ajuta la intrebarile pe care le voi pune la interviu.
+
+Ca recruiter, vreau sa vad un cv oricand.
+
+Ca recruiter, vreau sa marchez pe cv ce imi place si ce nu imi place.
+
+Ca recruiter, vreau sa anunt un job pe retele sociale sau in ziar.
+
+Ca recruiter, vreau sa recomand un candidat pentru o pozitie.
+

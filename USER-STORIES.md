@@ -2,7 +2,7 @@
 
 ##Director general
 
-Ca director general, vreau sa pot sa resping orice candidat. Nu ca nu imi mi-ar
+Ca director general, vreau sa pot sa resping orice candidat. Nu ca nu mi-ar
 placea de el sau asa ceva.
 
 Ca director general, eu vreau sa stiu tot ce se intampla in firma asta, sa imi
@@ -85,12 +85,16 @@ Ca recruiter, vreau sa stiu cat salar a avut candidatul inainte ca sa il pot
 fraieri si sa ii dau doar 100 RON in plus. Ii mai zic si ca e salar competitiv.
 Si ui asa iau eu bonus mai mare.
 
-Ca si recruiter vreau sa stiu, primind mail despre toate schimbarile ce apar in legatura cu pozitiile de care ma ocup.
+Ca si recruiter vreau sa stiu, primind mail despre toate schimbarile ce apar in
+legatura cu pozitiile de care ma ocup.
 
 Ca si recruiter vreau sa pot sa adaug sau sa modific datele unui candidat pentru o anumita pozitie.
 
-Ca si recruiter vreau sa pot scrie comentarii de bine sau de rau in privinta uni candidat cat si sa le dau un anumit scor/rating pentru al putea difentia de ceilalti candidati.
+Ca si recruiter vreau sa pot scrie comentarii de bine sau de rau in privinta
+unui candidat cat si sa le dau un anumit scor/rating pentru al putea diferentia
+de ceilalti candidati.
 
 ##Vizitator
 
-Ca si vizitator al acestui site, vreau sa pot sa vizualizez toate poziile deschise, sa pot sa le filtrez si sa aplic la cate poziitii vreau eu.
+Ca si vizitator al acestui site, vreau sa pot sa vizualizez toate pozitiile 
+deschise, sa pot sa le filtrez si sa aplic la cate pozitii vreau eu.

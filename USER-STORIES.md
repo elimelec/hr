@@ -20,36 +20,34 @@ fraieri si sa ii dau doar 100 RON in plus. Ii mai zic si ca e salar competitiv.
 Si ui asa iau eu bonus mai mare.
 
 -------------------------------------------------------------------------------------------------------
-As a general director, I want to be able to accept or reject a candidate
-regarding his skills. 
+Ca director general, vreau sa accept sau sa resping un candidat in
+legatura cu calificarea lui.
 
-As a general director, I want to be notified if a candidate has recommendations
-or worked at a competitor.
+Ca director general, vreau sa fiu notificat daca un candidat are
+recomandare sau daca a lucrat la un competitor.
 
-As a general director, I want to be able to accept or reject an anouncement for
-a job.
+Ca director general, vreau sa accept sau sa resping un anunt pentru o
+pozitie.
 
-As a department director, I want to be notified when someone applies for a job 
-in my department and has required skills for the job.
+Ca director de departament, vreau sa fiu notificat daca cineva aplica
+la o pozitie in departamentul meu si daca are calificarea necesara.
 
-As a department director, I want to be present when the person who applies for 
-a job is interviewed to be able to observe if he has the required skills.
+Ca director de departament, vreau sa fiu prezent cand candidatul este
+intervievat pentru a observa daca are calificarea necesara.
 
-As a HR director, I want to be able to access someone resume anytime.
+Ca director HR, vreau sa pot accesa oricand cv-ul cuiva.
 
-As a HR director, I want to be able to mark a person as favourite for the job.
+Ca director HR, vreau sa pot marca ca favorit o persoana pentru o
+pozitie.
 
-As a HR director, I want to be able to add comments on the resume to be easier 
-for me to ask questions at the interview.
+Ca director HR, vreau sa adaug comentariu la cv-ul candidatului pentru
+a-mi ajuta la intrebarile pe care le voi pune la interviu.
 
-As a recruiter, I want to be able to see a resume anytime and mark on the resume
-what I like or not about it. 
+Ca recruiter, vreau sa vad un cv oricand.
 
-As a recruiter, I want to be able to announce a job on social media, newspapers, etc.
+Ca recruiter, vreau sa marchez pe cv ce imi place si ce nu imi place.
 
-As a recruiter, I want to be able to recommend a candidate for a position in the company.
+Ca recruiter, vreau sa anunt un job pe retele sociale sau in ziar.
 
-Administrator
-
-Viewer
+Ca recruiter, vreau sa recomand un candidat pentru o pozitie.
 

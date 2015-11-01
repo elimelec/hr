@@ -1,6 +1,6 @@
-#User Stories
+# User Stories
 
-##Director general
+## Director general
 
 Ca director general, vreau sa pot sa resping orice candidat. Nu ca nu mi-ar
 placea de el sau asa ceva.
@@ -21,7 +21,7 @@ recomandare sau daca a lucrat la un competitor.
 Ca director general, vreau sa accept sau sa resping un anunt pentru o
 pozitie.
 
-##Director departament
+## Director departament
 
 Ca director de departament, vreau sa pot vedea toti candidatii care au
 aplicat la o pozitie pentru departamentul meu.
@@ -31,18 +31,19 @@ care a aplicat la o pozitie pentru departamentul meu.
 
 Ca director de departament, vreau sa adaug o pozitie pentru departamentul meu.
 
-Ca director de departament, vreau sa inchid sau sa redeschid o pozitie a 
+Ca director de departament, vreau sa inchid sau sa redeschid o pozitie a
 departamentul meu.
 
-Ca director de departament, vreau sa modific numarul de locuri disponibile pentru
-o pozitie din departamentul meu.
+Ca director de departament, vreau sa modific numarul de locuri disponibile
+pentru o pozitie din departamentul meu.
 
 Ca director de departament, vreau sa editez o pozitie a departamentul meu.
 
-Ca director de departament, vreau sa pot filtra candidatii pentru o anumita pozitie.
+Ca director de departament, vreau sa pot filtra candidatii pentru o anumita
+pozitie.
 
-Ca director de departament, vreau sa ordonez candidatii pentru o pozitie in functie de
-ratingul de la recruieteri
+Ca director de departament, vreau sa ordonez candidatii pentru o pozitie in
+functie de ratingul de la recruieteri
 
 Ca director de departament, vreau sa fiu notificat daca cineva aplica
 la o pozitie in departamentul meu si daca are calificarea necesara.
@@ -60,18 +61,19 @@ pozitie.
 Ca director HR, vreau sa adaug comentariu la cv-ul candidatului pentru
 a-mi ajuta la intrebarile pe care le voi pune la interviu.
 
-##Director IT
+## Director IT
 
 Ca director de IT, vreau sa accept toti canditatii care stiu lisp. Normal ca nu
-ma bag pe site si ma uit la fiecare in parte, deschid un terminal, scriu un 
+ma bag pe site si ma uit la fiecare in parte, deschid un terminal, scriu un
 scrip si il rulez. Aia de la marketing nu au decat sa mearga pe site, eu unul
 nu.
 
-##Administrator
+## Administrator
 
-Ca si administrator de sistem vreau sa pot sa adaug, sterg sau sa editez utilizatorii site-ului.
+Ca si administrator de sistem vreau sa pot sa adaug, sterg sau sa editez
+utilizatorii site-ului.
 
-##Recruiter
+## Recruiter
 
 Ca recruiter, vreau sa vad un cv oricand.
 
@@ -88,13 +90,14 @@ Si ui asa iau eu bonus mai mare.
 Ca si recruiter vreau sa stiu, primind mail despre toate schimbarile ce apar in
 legatura cu pozitiile de care ma ocup.
 
-Ca si recruiter vreau sa pot sa adaug sau sa modific datele unui candidat pentru o anumita pozitie.
+Ca si recruiter vreau sa pot sa adaug sau sa modific datele unui candidat pentru
+o anumita pozitie.
 
 Ca si recruiter vreau sa pot scrie comentarii de bine sau de rau in privinta
 unui candidat cat si sa le dau un anumit scor/rating pentru al putea diferentia
 de ceilalti candidati.
 
-##Vizitator
+## Vizitator
 
-Ca si vizitator al acestui site, vreau sa pot sa vizualizez toate pozitiile 
+Ca si vizitator al acestui site, vreau sa pot sa vizualizez toate pozitiile
 deschise, sa pot sa le filtrez si sa aplic la cate pozitii vreau eu.

@@ -51,7 +51,7 @@ la o pozitie in departamentul meu si daca are calificarea necesara.
 Ca director de departament, vreau sa fiu prezent cand candidatul este
 intervievat pentru a observa daca are calificarea necesara.
 
-##Director HR
+## Director HR
 
 Ca director HR, vreau sa pot accesa oricand cv-ul cuiva.
 

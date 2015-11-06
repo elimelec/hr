@@ -101,3 +101,7 @@ de ceilalti candidati.
 
 Ca si vizitator al acestui site, vreau sa pot sa vizualizez toate pozitiile
 deschise, sa pot sa le filtrez si sa aplic la cate pozitii vreau eu.
+
+# Note
+
+Ne axam pe povestile utilizator de la directorii de departament.

@@ -9,6 +9,17 @@
 A departament director wants to see a list with all candidates who applied to a
 position in his department.
 
+
+## HR Director
+
+### HR Director adds a comment
+
+![HR Director adds a comment](http://yuml.me/diagram/nofunky/usecase/[HR Director] - Add comment "HR Director adds a comment")
+
+Sometimes the HR director wants to comment something right on a cv. Maybe he
+wants to note that a canditate is really good. Or that he knows spanish, native
+level and is a good assest for company. You can't live without comments nowdays.
+
 ## IT Director
 
 ### IT Director access API Documentation

@@ -1,5 +1,14 @@
 # Use Cases
 
+## Department Director
+
+### Department Director views all candidates
+
+![Department Director views all candidates](http://yuml.me/diagram/nofunky/usecase/[Departament Director] - Views all candidates "Department Director views all candidates")
+
+A departament director wants to see a list with all candidates who applied to a
+position in his department.
+
 ## IT Director
 
 ### IT Director access API Documentation

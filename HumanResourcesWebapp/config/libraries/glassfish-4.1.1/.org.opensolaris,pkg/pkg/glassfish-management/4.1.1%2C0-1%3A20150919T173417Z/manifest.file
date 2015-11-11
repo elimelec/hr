@@ -1,0 +1,3 @@
+file d468b6b11d159d4ea0f61e1c98e59c7e04a51c78 chash=e6be52b9a32e2184897707e12b1dc8217c30b41c group=sys mode=0644 owner=root path=glassfish/modules/rest-service.jar pkg.csize=490668 pkg.size=535008
+file f090899caf25981b88003126f21008909fd37f62 chash=4341b158e324e31ab024125045d03a1e6375e818 group=sys mode=0644 owner=root path=glassfish/modules/rest-client.jar pkg.csize=27192 pkg.size=31431
+file 6f52454037289cebadd87f2c766c8a414168fb0c chash=1434dd9e714e4d5b2d7de132eb81707a7989a401 group=sys mode=0644 owner=root path=glassfish/modules/gf-restadmin-connector.jar pkg.csize=13472 pkg.size=16917

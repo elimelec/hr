@@ -65,4 +65,4 @@
 1. **Candidatul** aplica la o pozitie
 2. **Directorul** primeste mail cu detalii despre **candidatul** care a aplicat
 3. **Directorul** citeste mailul
-4. **Directorul** ~~sterge~~ arhiveaza mailul
+4. **Directorul** ~~sterge~~ ~~arhiveaza~~ inchide mailul

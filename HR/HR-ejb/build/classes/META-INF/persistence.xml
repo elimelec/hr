@@ -3,6 +3,8 @@
   <persistence-unit name="HR-ejbPU" transaction-type="JTA">
     <jta-data-source>java:module/HRDB</jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
-    <properties/>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
   </persistence-unit>
 </persistence>

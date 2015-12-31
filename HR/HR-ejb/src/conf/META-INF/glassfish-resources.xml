@@ -10,5 +10,6 @@
         <property name="URL" value="jdbc:derby://localhost:1527/HRDB"/>
         <property name="driverClass" value="org.apache.derby.jdbc.ClientDriver"/>
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" jndi-name="java:module/HRDB" object-type="user" pool-name="derby_net_HRDB_Pool"/>
+    <!--<jdbc-resource enabled="true" jndi-name="java:module/HRDB" object-type="system-all" pool-name="derby_net_HRDB_Pool"/>-->
+    <jdbc-resource enabled="true" jndi-name="jdbc/__default" object-type="system-all" pool-name="DerbyPool"/>
 </resources>

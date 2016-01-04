@@ -1,0 +1,15 @@
+*~
+*.log
+HR/Database/*
+!HR/Database/HRDB/
+!HR/Database/derby.properties
+HR/build/
+HR/dist/
+HR/nbproject/private/
+HR/HR-ejb/build/
+HR/HR-ejb/dist/
+HR/HR-ejb/nbproject/private/
+HR/HR-war/build/
+HR/HR-war/dist/
+HR/HR-war/nbproject/private/
+

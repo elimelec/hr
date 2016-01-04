@@ -1,39 +1,68 @@
 # Use Cases
 
-## Department Director
+## Director departament
 
-### Department Director views all candidates
+### Directorul de departament vizualizeaza candidatii
 
-![Department Director views all candidates](http://yuml.me/diagram/nofunky/usecase/[Departament Director] - Views all candidates "Department Director views all candidates")
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** alege o pozitie din departamentul lui
+4. **Directorul** priveste o lista cu toti canditatii la acea pozitie
 
-A departament director wants to see a list with all candidates who applied to a
-position in his department.
+### Directorul de departament vizualizeaza candidatii ordonati dupa rating
 
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** alege o pozitie din departamentul lui
+4. **Directorul** priveste o lista cu toti canditatii la acea pozitie
+5. **Directorul** apasa pe butonul "Sortare dupa rating"
 
-## HR Director
+### Directorul de departament accepta sau respinge un candidat
 
-### HR Director adds a comment
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** alege o pozitie din departamentul lui
+4. **Directorul** priveste o lista cu toti canditatii la acea pozitie
+5. **Directorul** alege un candidat si ii vede profilul
+6. **Directorul** apasa pe butonul de respingere sau acceptare
 
-![HR Director adds a comment](http://yuml.me/diagram/nofunky/usecase/[HR Director] - Add comment "HR Director adds a comment")
+### Directorul de departament adauga o noua pozitie
 
-Sometimes the HR director wants to comment something right on a cv. Maybe he
-wants to note that a canditate is really good. Or that he knows spanish, native
-level and is a good assest for company. You can't live without comments nowdays.
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** da click pe butonul "Pozitie noua"
+4. **Directorul** completeaza datele necesare
+5. **Directorul** da click pe butonul "Salveaza"
 
-## IT Director
+### Directorul de departament inchide sau redeschide o pozitie
 
-### IT Director access API Documentation
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** alege o pozitie din departamentul lui
+4. **Directorul** da click pe butonul "Modifica"
+5. **Directorul** apasa pe butonul "Inchide pozitie" sau "Redeschide pozitie"
 
-![IT Director access API Documentation](http://yuml.me/diagram/nofunky/usecase/[IT Director] - API Documentation "IT Director access API Documentation")
+### Directorul de departament modifica numarul de locuri disponibile
 
-The IT Director wants to make script (probably in ruby) to manage the candidates
-for IT departament exactly how he wants. First, he reads the API documentation,
-then he writes the best script ever. Managing candidates never was so easy.
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** alege o pozitie din departamentul lui
+4. **Directorul** da click pe butonul "Modifica"
+5. **Directorul** modifica numarul din caseta cu locuri disponibile
+6. **Directorul** da click pe butonul "Salveaza"
 
-### IT Director generates API key
+### Directorul de departament modifica o pozitie
 
-![IT Director generates API key](http://yuml.me/diagram/nofunky/usecase/[IT Director] - Generate API key "IT Director generates API key")
+1. **Directorul** intra pe aplicatie
+2. **Directorul** se logheaza
+3. **Directorul** alege o pozitie din departamentul lui
+4. **Directorul** da click pe butonul "Modifica"
+5. **Directorul** modifica ceva
+6. **Directorul** da click pe butonul "Salveaza"
 
-Before the script can connect to the server, it must authenticate with a secret
-API key to keep things secure. The IT Director will generate one and use it in
-his awesome script.
+### Directorul de departament primeste notificare
+
+1. **Candidatul** aplica la o pozitie
+2. **Directorul** primeste mail cu detalii despre **candidatul** care a aplicat
+3. **Directorul** citeste mailul
+4. **Directorul** ~~sterge~~ ~~arhiveaza~~ inchide mailul

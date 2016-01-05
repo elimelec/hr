@@ -8,6 +8,7 @@
     </head>
     <body>
 		<%@ include file="WEB-INF/pages/header.jsp" %>
+		
         <h1>Login</h1>
         <form action="login" method="POST">
             <input type="email" placeholder="Email" name="email">

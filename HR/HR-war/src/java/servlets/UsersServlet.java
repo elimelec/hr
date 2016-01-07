@@ -1,6 +1,6 @@
 package servlets;
 
-import HREntity.Users;
+import Entity.Users;
 import dao.UsersDao;
 import dao.UsersDaoLocal;
 import java.io.IOException;

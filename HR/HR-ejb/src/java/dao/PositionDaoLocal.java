@@ -1,6 +1,6 @@
 package dao;
 
-import HREntity.Position;
+import Entity.Position;
 import java.util.List;
 import javax.ejb.Local;
 

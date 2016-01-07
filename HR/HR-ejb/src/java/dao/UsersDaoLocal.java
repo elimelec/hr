@@ -5,7 +5,7 @@
  */
 package dao;
 
-import HREntity.Users;
+import Entity.Users;
 import java.util.List;
 import javax.ejb.Local;
 

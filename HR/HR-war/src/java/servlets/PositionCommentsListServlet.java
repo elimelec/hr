@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "PositionCommentsList", urlPatterns = {"/position-comments"})
-public class PositionCommentsList extends HttpServlet {
+@WebServlet("/position-comments")
+public class PositionCommentsListServlet extends HttpServlet {
 
     @EJB
     private PositionDaoLocal positionDao;

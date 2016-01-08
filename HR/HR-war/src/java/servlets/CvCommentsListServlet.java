@@ -13,9 +13,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/position-comments")
-public class PositionCommentsListServlet extends HttpServlet {
 
+@WebServlet("/cv-comments")
+public class CvCommentsListServlet extends HttpServlet {
+    
     @EJB
     private PositionDaoLocal positionDao;
 
@@ -29,51 +30,46 @@ public class PositionCommentsListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Position position = getCurrentPosition(request);
-        request.setAttribute("position", position);
-        request.setAttribute("comments", getCurrentComments(position));
-        getServletContext().getRequestDispatcher("/WEB-INF/pages/position-comments.jsp").forward(request, response);
+        CurriculumVitae cv = getCurrentCv(request);
+        request.setAttribute("cv", cv);
+        request.setAttribute("comments", getCurrentComments(cv));
+        getServletContext().getRequestDispatcher("/WEB-INF/pages/cv-comments.jsp").forward(request, response);
     }
 
-    private Position getCurrentPosition(HttpServletRequest request) {
-        String positionId = request.getParameter("position");
-        int positionIdInt = Integer.parseInt(positionId);
-        Position position = positionDao.getItemById(positionIdInt);
-        List<Position> positions = positionDao.getAll();
-
-        position = new Position();
-        position.setIdposition(positionIdInt);
-        position.setName("Junior Lisp Programmer");
-
-        return position;
+    private CurriculumVitae getCurrentCv(HttpServletRequest request) {
+        CurriculumVitae cv = new CurriculumVitae();
+        cv.setId(1);
+        cv.setTitle("John Doe");
+        
+        return cv;
     }
 
-    private List<Comment> getCurrentComments(Position position) {
+    private List<Comment> getCurrentComments(CurriculumVitae cv) {
         int index = 0;
 
         Comment c1 = new Comment();
         c1.setId(++index);
-        c1.setComment("hello how can i apply");
+        c1.setComment("I interviewed him, he is bad. Maria, Serious Company LLC");
 
         Comment c2 = new Comment();
         c2.setId(++index);
-        c2.setComment("Hello, to apply please click on the apply button. Serious Company LLC");
+        c2.setComment("Same here. Adelle, Serious Company LLC");
 
         Comment c3 = new Comment();
         c3.setId(++index);
-        c3.setComment("Nice position, i want to apply");
+        c3.setComment("I also saw selfies with biceps on his Facebook page. Laura, Serious Company LLC");
 
         Comment c4 = new Comment();
         c4.setId(++index);
-        c4.setComment("This company is bad");
+        c4.setComment("We should reject him. Adelle, Serious Company LLC");
 
         Comment c5 = new Comment();
         c5.setId(++index);
-        c5.setComment("dont appli to dem they are very bad");
+        c5.setComment("First we should get approval from the manager. Maria, Serious Company LLC");
 
         Comment c6 = new Comment();
         c6.setId(++index);
-        c6.setComment("plz accept me");
+        c6.setComment("I talked with the manager. We have permission. Maria, Serious Company LLC");
 
         List<Comment> comments = new ArrayList<>();
         comments.add(c1);
@@ -91,4 +87,5 @@ public class PositionCommentsListServlet extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
+
 }

@@ -2,12 +2,12 @@ package servlets;
 
 import java.io.Serializable;
 
-public class PositionComment implements Serializable {
+public class Comment implements Serializable {
 
     private int id;
     private String comment;
 
-    PositionComment() {
+    Comment() {
     }
 
     public int getId() {

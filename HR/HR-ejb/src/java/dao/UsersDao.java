@@ -7,8 +7,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Stateless
-public class UsersDao implements UsersDaoLocal {
-    
+public class UsersDao extends Dao<Users> {
+
     @PersistenceContext(unitName = "HR-ejbPU")
     private EntityManager entityManager;
 

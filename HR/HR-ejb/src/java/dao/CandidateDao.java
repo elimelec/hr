@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dao;
 
 import Entity.Candidate;
@@ -11,41 +6,35 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-
 @Stateless
-public class CandidateDao implements CandidateDaoLocal {
+public class CandidateDao extends Dao<Candidate> {
 
     @PersistenceContext(unitName = "HR-ejbPU")
     private EntityManager entityManager;
-    
-   /* @Override
-    public void addCv(Cv cv) {
-        entityManager.persist(cv);
-    }
-    
 
-    @Override
-    public void deleteCv(Integer id){ 
-             entityManager.remove(getItemById(id))
+      @Override
+    public void add(Candidate candidate) {
+        entityManager.persist(candidate);
     }
 
     @Override
-    public void updateCv(Cv cv) {
-            entityManager.merge(cv);
+    public void delete(Integer id) {
+        entityManager.remove(getItemById(id));
     }
 
     @Override
-    public void getItemById(Integer id) {
-         return entityManager.find(Cv.class, id);
+    public void update(Candidate candidate) {
+        entityManager.merge(candidate);
     }
-*/
-   @Override
+
+    @Override
+    public Candidate getItemById(Integer id) {
+        return entityManager.find(Candidate.class, id);
+    }
+
+    @Override
     public List<Candidate> getAll() {
         return entityManager.createNamedQuery("Cv.findAll").getResultList();
     }
 
-
-    
-    
-    
 }

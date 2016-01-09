@@ -5,6 +5,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 @Stateless
 public class UsersDao extends Dao<Users> {
@@ -35,5 +36,13 @@ public class UsersDao extends Dao<Users> {
     @Override
     public List<Users> getAll() {
         return entityManager.createNamedQuery("Users.findAll").getResultList();
+    }
+    
+    public int findByEmailAndUsername(String email, String username) {
+        Query query = entityManager.createNamedQuery("Users.findByEmailAndUsername");
+        query.setParameter("email", email);
+        query.setParameter("username", username);
+        List<Users> o = query.getResultList();
+        return o.size();
     }
 }

@@ -24,7 +24,5 @@
         </tbody>
     </table>
     
-     <a class="btn" href="${pageContext.request.contextPath}/add-edit-position">Add Position</a>
-    <!--<a class="btn" href="${pageContext.request.contextPath}/cvs">Add Position</a>-->
-    
+     <a class="btn" href="${pageContext.request.contextPath}/add-edit-position">Add Position</a>    
 </div>

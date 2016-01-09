@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package servlets;
 
 import dao.CandidateDaoLocal;
@@ -14,11 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Ale
- */
-//@WebServlet(name = "CVListServlet", urlPatterns = {"/cvs"})
 @WebServlet("/cvs")
 public class CvListServlet extends HttpServlet {
 

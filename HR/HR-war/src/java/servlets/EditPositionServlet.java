@@ -5,7 +5,7 @@
  */
 package servlets;
 
-import dao.PositionDaoLocal;
+import dao.PositionDao;
 import java.io.IOException;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 public class EditPositionServlet extends HttpServlet {
 
     @EJB  
-    private PositionDaoLocal positionDao;
+    private PositionDao positionDao;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

@@ -1,6 +1,6 @@
 package servlets;
 
-import dao.CandidateDaoLocal;
+import dao.CandidateDao;
 import java.io.IOException;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 public class CvListServlet extends HttpServlet {
 
    @EJB  
-    private CandidateDaoLocal candidateDao;
+    private CandidateDao candidateDao;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

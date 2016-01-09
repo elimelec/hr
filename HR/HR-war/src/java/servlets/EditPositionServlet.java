@@ -5,6 +5,7 @@
  */
 package servlets;
 
+import Entity.Position;
 import dao.PositionDao;
 import java.io.IOException;
 import javax.ejb.EJB;
@@ -39,6 +40,12 @@ public class EditPositionServlet extends HttpServlet {
         
         String name = request.getParameter("name");
         String text = request.getParameter("position_description");
+        
+           
+        Position  position = new Position();
+        position.setName("name");
+        position.setName("position_description");
+        positionDao.update(position);
         
         getServletContext().getRequestDispatcher("/WEB-INF/pages/add-edit-position.jsp").forward(request, response);
         

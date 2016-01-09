@@ -1,7 +1,7 @@
 package servlets;
 
 import Entity.Position;
-import dao.PositionDaoLocal;
+import dao.PositionDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 public class PositionCommentsListServlet extends HttpServlet {
 
     @EJB
-    private PositionDaoLocal positionDao;
+    private PositionDao positionDao;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

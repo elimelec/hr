@@ -7,12 +7,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Stateless
-public class PositionDao implements PositionDaoLocal {
+public class PositionDao extends Dao<Position> {
 
     @PersistenceContext(unitName = "HR-ejbPU")
     private EntityManager entityManager;
 
-    
     @Override
     public void add(Position position) {
         entityManager.persist(position);
@@ -38,5 +37,4 @@ public class PositionDao implements PositionDaoLocal {
         return entityManager.createNamedQuery("Position.findAll").getResultList();
     }
 
-    
 }

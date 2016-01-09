@@ -3,6 +3,7 @@ package servlets;
 import Entity.Users;
 import dao.UsersDao;
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,10 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "UsersServlet", urlPatterns = {"/login"})
+@WebServlet("/login")
 public class UsersServlet extends HttpServlet {
-   
-//    @Inject  
+
     @EJB  
     private UsersDao usersDao;
     
@@ -24,7 +24,8 @@ public class UsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        processRequest(request, response);
+        getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+
     }
 
     
@@ -34,22 +35,14 @@ public class UsersServlet extends HttpServlet {
         
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        
-        Users user = new Users();
-        user.setEmail(email);
-        user.setUsername(password);
-        
-        usersDao.add(user);
-        
-        //TO-DO: check if user exists in database and is admin and then do the redirect
-//        request.login(email, password);
 
-//        response.sendRedirect("/positions/");
-
-
-        //not the best practice, to do with redirect
-        getServletContext().getRequestDispatcher("/WEB-INF/pages/position-list.jsp").forward(request, response);
-        
+        int userExists = usersDao.findByEmailAndUsername(email, password);
+        if(userExists != 0) {
+            response.sendRedirect("http://localhost:8080/HR-war/positions");
+        }
+        else {
+            response.sendRedirect("http://localhost:8080/HR-war/error");
+        }
     }
 
 }

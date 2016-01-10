@@ -24,9 +24,7 @@ public class PositionCommentsListServlet extends HttpServlet {
 
         Position position = getCurrentPosition(request);
         String newComment = request.getParameter("newcomment");
-        PositionComment positionComment = new PositionComment();
-        positionComment.setText(newComment);
-        positionComment.setPositionId(position.getIdposition());
+        PositionComment positionComment = new PositionComment(newComment, position.getIdposition());
         positionDao.addComment(positionComment);
 
         response.sendRedirect(request.getRequestURI() + "?position=" + position.getIdposition());

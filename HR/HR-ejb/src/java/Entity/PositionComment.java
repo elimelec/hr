@@ -39,8 +39,7 @@ public class PositionComment implements Serializable {
     public PositionComment() {
     }
 
-    public PositionComment(Long id, String text, int positionId) {
-        this.id = id;
+    public PositionComment(String text, int positionId) {
         this.text = text;
         this.positionId = positionId;
     }

@@ -6,7 +6,7 @@
 <ol>
     <c:forEach var="comment" items="${comments}">
         <li>
-            ${comment.comment}
+            ${comment.text}
         </li>
     </c:forEach>
 </ol>

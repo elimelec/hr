@@ -48,7 +48,7 @@ public class Users implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @NotNull
     @Column(name = "IDUSER")
@@ -61,9 +61,12 @@ public class Users implements Serializable {
     private String email;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 45)
+    @Size(min = 1, max = 255)
     @Column(name = "USERNAME")
     private String username;
+    @Size(min = 1, max = 45)
+    @Column(name = "PERMISIUNI")
+    private String permisiuni;
     @Size(max = 45)
     @Column(name = "FIRSTNAME")
     private String firstname;

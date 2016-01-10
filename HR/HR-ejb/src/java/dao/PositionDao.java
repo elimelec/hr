@@ -1,6 +1,7 @@
 package dao;
 
 import Entity.Position;
+import Entity.PositionComment;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -37,4 +38,7 @@ public class PositionDao extends Dao<Position> {
         return entityManager.createNamedQuery("Position.findAll").getResultList();
     }
 
+    public List<PositionComment> getAllComments(Integer positionId) {
+        return entityManager.createNamedQuery("PositionComment.findByPositionId").setParameter("positionId", positionId).getResultList();
+    }
 }

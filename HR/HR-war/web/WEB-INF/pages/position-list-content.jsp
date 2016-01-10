@@ -12,6 +12,7 @@
             <tr>
                 <th class="text-left">ID</th>
                 <th class="text-left">Name</th>
+                <th class="text-left">Comments</th>
             </tr>
         </thead>
         <tbody class="table-hover">	
@@ -19,6 +20,7 @@
                     <tr>
                         <td class="text-left">${position.idposition}</td>
                         <td class="text-left"><a href="${pageContext.request.contextPath}/add-edit-position?id=${position.idposition}">${position.name}</a></td>
+                        <td class="text-left"><a href="${pageContext.request.contextPath}/position-comments?position=${position.idposition}">View Comments</a></td>
                     </tr>
             </c:forEach>               
         </tbody>

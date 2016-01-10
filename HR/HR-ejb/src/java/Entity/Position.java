@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Entity;
 
 import java.io.Serializable;
@@ -10,6 +5,8 @@ import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
@@ -22,10 +19,6 @@ import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-/**
- *
- * @author alexa
- */
 @Entity
 @Table(name = "POSITION")
 @XmlRootElement
@@ -47,6 +40,7 @@ public class Position implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "IDPOSITION")
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer idposition;
     @Size(max = 45)
     @Column(name = "NAME")

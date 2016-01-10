@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/login")
 public class UsersServlet extends HttpServlet {
 
-    @EJB  
+    @EJB
     private UsersDao usersDao;
-    
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     }
-   
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -26,21 +26,21 @@ public class UsersServlet extends HttpServlet {
 
     }
 
-    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        int userExists = usersDao.findByEmailAndUsername(email, password);
-        if(userExists != 0) {
+        try {
+            request.login(email, password);
+
+            String currentLoggedUserEmail = request.getRemoteUser();
+
             response.sendRedirect("http://localhost:8080/HR-war/positions");
-        }
-        else {
+        } catch (ServletException e) {
             response.sendRedirect("http://localhost:8080/HR-war/error");
         }
     }
-
 }

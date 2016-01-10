@@ -251,9 +251,13 @@ tr {
  
 tr:hover td {
   background:#4E5066;
-  color:#FFFFFF;
+  color: white;
   border-top: 1px solid #22262e;
   border-bottom: 1px solid #22262e;
+}
+
+tr:hover td.text-left a {
+   color: white;
 }
  
 tr:first-child {
@@ -291,6 +295,9 @@ td {
   border-right: 1px solid #C1C3D1;
 }
 
+tr td.text-left a {
+    color: #666b85;
+}
 td:last-child {
   border-right: 0px;
 }

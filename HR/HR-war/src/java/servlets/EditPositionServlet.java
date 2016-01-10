@@ -32,8 +32,21 @@ public class EditPositionServlet extends HttpServlet {
         if(queryStringId == null) {
             queryStringId = "0";
         }
+        
         request.setAttribute("id", queryStringId);
-       
+        
+        try {
+                int id = Integer.parseInt(queryStringId);
+
+                if(id > 0) {
+                    Position position = positionDao.getItemById(id);
+                    request.setAttribute("position", position);
+                }
+            }
+            catch(NumberFormatException nfe) {
+                response.sendRedirect("http://localhost:8080/HR-war/error");
+            }        
+        
         getServletContext().getRequestDispatcher("/WEB-INF/pages/add-edit-position.jsp").forward(request, response);
     }
 
@@ -43,14 +56,24 @@ public class EditPositionServlet extends HttpServlet {
 
         String name = request.getParameter("name");
         String description = request.getParameter("position_description");
+        String no_positions = request.getParameter("no_positions");
+        String available = request.getParameter("available");
         String idString = request.getParameter("id");
 
         if(idString.equals("0")) {
             Position position = new Position();
-            position.setIdposition(11);
+            position.setIdposition(6);
             position.setName(name);
             position.setResponsabilitati(description);
-            position.setDeleted("0");      
+            position.setDeleted("0");    
+            position.setNoPositions(no_positions);
+            
+            if(available.equals("closed")) {
+                position.setOpened("0");
+            } 
+            else {
+                position.setOpened("1");
+            }
             positionDao.add(position);
             
             response.sendRedirect("http://localhost:8080/HR-war/positions");
@@ -62,6 +85,13 @@ public class EditPositionServlet extends HttpServlet {
                 Position  position = positionDao.getItemById(id);        
                 position.setName(name);
                 position.setResponsabilitati(description);
+                position.setNoPositions(no_positions);
+                if(available.equals("closed")) {
+                    position.setOpened("0");
+                } 
+                else {
+                    position.setOpened("1");
+                }
                 positionDao.update(position);           
 
                 response.sendRedirect("http://localhost:8080/HR-war/positions");

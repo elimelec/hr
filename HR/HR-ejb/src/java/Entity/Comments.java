@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Entity;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -18,10 +15,6 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author alexa
- */
 @Entity
 @Table(name = "COMMENTS")
 @XmlRootElement
@@ -36,6 +29,7 @@ public class Comments implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "IDCOMMENTS")
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer idcomments;
     @Column(name = "DELETED")
     private Boolean deleted;

@@ -21,18 +21,15 @@ public class PositionCommentsListServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         Position position = getCurrentPosition(request);
         String newComment = request.getParameter("newcomment");
         PositionComment positionComment = new PositionComment();
         positionComment.setText(newComment);
         positionComment.setPositionId(position.getIdposition());
         positionDao.addComment(positionComment);
-        
-        try (PrintWriter out = response.getWriter()) {
-            out.println("Position id: " + request.getParameter("position"));
-            out.println("New comment: " + request.getParameter("newcomment"));
-        }
+
+        response.sendRedirect(request.getRequestURI() + "?position=" + position.getIdposition());
     }
 
     @Override
@@ -49,7 +46,7 @@ public class PositionCommentsListServlet extends HttpServlet {
         int id = Integer.parseInt(positionId);
         return positionDao.getItemById(id);
     }
-    
+
     private List<PositionComment> getCurrentComments(HttpServletRequest request) {
         String positionId = request.getParameter("position");
         int id = Integer.parseInt(positionId);

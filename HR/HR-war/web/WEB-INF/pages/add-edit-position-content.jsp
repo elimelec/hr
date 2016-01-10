@@ -5,7 +5,7 @@
     <input type="text" name="name" value="${position.name}"/>
     
     <label for="position_description">Responsibilities:</label>
-    <textarea form ="add-edit-position" placeholder="${position.responsabilitati}" name="position_description" rows="20" cols="35"></textarea>
+    <textarea form ="add-edit-position" name="position_description" rows="20" cols="35">${position.responsabilitati}</textarea>
     
     <label for="no_positions">Number of positions:</label>
     <input type="text" name="no_positions" value="${position.noPositions}"/>

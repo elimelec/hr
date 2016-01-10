@@ -39,7 +39,6 @@ public class EditPositionServlet extends HttpServlet {
 
         if(idString.equals("0")) {
             Position position = new Position();
-            position.setIdposition(11);
             position.setName(name);
             position.setResponsabilitati(description);
             position.setDeleted("0");      

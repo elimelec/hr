@@ -1,11 +1,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
-<form action="add-edit-position" method="POST">
+<form action="add-edit-position" method="POST" id="add-edit-position">
     
     <label for="name">Name:</label>
     <input type="text" name="name" value="${position.name}"/>
     
     <label for="position_description">Responsibilities:</label>
-    <textarea form ="add-edit-position" placeholder="${position.responsabilitati}" name="position_description" id="position_description_id" rows="20" cols="35"></textarea>
+    <textarea form ="add-edit-position" placeholder="${position.responsabilitati}" name="position_description" rows="20" cols="35"></textarea>
     
     <label for="no_positions">Number of positions:</label>
     <input type="text" name="no_positions" value="${position.noPositions}"/>

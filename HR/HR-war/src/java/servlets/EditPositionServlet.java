@@ -6,9 +6,7 @@
 package servlets;
 
 import Entity.Position;
-import Entity.Users;
 import dao.PositionDao;
-import dao.UsersDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.ejb.EJB;
@@ -59,10 +57,9 @@ public class EditPositionServlet extends HttpServlet {
         String no_positions = request.getParameter("no_positions");
         String available = request.getParameter("available");
         String idString = request.getParameter("id");
-
+ 
         if(idString.equals("0")) {
             Position position = new Position();
-            position.setIdposition(6);
             position.setName(name);
             position.setResponsabilitati(description);
             position.setDeleted("0");    

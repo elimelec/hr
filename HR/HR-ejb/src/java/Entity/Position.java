@@ -38,7 +38,7 @@ public class Position implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @NotNull
+//    @NotNull
     @Column(name = "IDPOSITION")
     @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer idposition;

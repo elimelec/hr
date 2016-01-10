@@ -41,4 +41,8 @@ public class PositionDao extends Dao<Position> {
     public List<PositionComment> getAllComments(Integer positionId) {
         return entityManager.createNamedQuery("PositionComment.findByPositionId").setParameter("positionId", positionId).getResultList();
     }
+    
+    public void addComment(PositionComment comment) {
+        entityManager.persist(comment);
+    }
 }

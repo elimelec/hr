@@ -1,12 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
-
-<h1>Comments</h1>
-<b>${position.name}</b>
-<br>
-<ol>
-    <c:forEach var="comment" items="${comments}">
-        <li>
-            ${comment.text}
-        </li>
-    </c:forEach>
-</ol>
+<jsp:include page="/WEB-INF/pages/template.jsp">
+	<jsp:param name="content" value="position-comments-content"/>
+	<jsp:param name="title" value="Comments"/>
+</jsp:include> 

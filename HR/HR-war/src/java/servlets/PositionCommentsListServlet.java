@@ -21,9 +21,17 @@ public class PositionCommentsListServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        
+        Position position = getCurrentPosition(request);
+        String newComment = request.getParameter("newcomment");
+        PositionComment positionComment = new PositionComment();
+        positionComment.setText(newComment);
+        positionComment.setPositionId(position.getIdposition());
+        positionDao.addComment(positionComment);
+        
         try (PrintWriter out = response.getWriter()) {
             out.println("Position id: " + request.getParameter("position"));
+            out.println("New comment: " + request.getParameter("newcomment"));
         }
     }
 

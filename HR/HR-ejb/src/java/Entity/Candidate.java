@@ -61,6 +61,8 @@ public class Candidate implements Serializable {
     private String adress;
     @Column(name = "CU_RELOCARE")
     private Boolean cuRelocare;
+    @Column(name = "ACCEPTED")
+    private Boolean accepted;
     @Lob
     @Column(name = "CV")
     private Serializable cv;
@@ -72,6 +74,7 @@ public class Candidate implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "candidateIdcandidate")
     private Collection<Comments> commentsCollection;
 
+    
     public Candidate() {
     }
 
@@ -87,6 +90,10 @@ public class Candidate implements Serializable {
         this.idcandidate = idcandidate;
     }
 
+    public void setAccepted(Boolean b)
+    {
+        this.accepted=b;
+    }
     public String getFirstname() {
         return firstname;
     }

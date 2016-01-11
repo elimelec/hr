@@ -12,10 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @WebServlet("/cv-comments")
 public class CvCommentsListServlet extends HttpServlet {
-    
+
     @EJB
     private PositionDao positionDao;
 
@@ -39,7 +38,7 @@ public class CvCommentsListServlet extends HttpServlet {
         CurriculumVitae cv = new CurriculumVitae();
         cv.setId(1);
         cv.setTitle("John Doe");
-        
+
         return cv;
     }
 

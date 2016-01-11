@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author keepCalling
  */
-@WebServlet("admin/addUser")
+@WebServlet("/admin/addUser")
 public class AddUser extends HttpServlet {
 
     @EJB

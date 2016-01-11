@@ -1,6 +1,6 @@
 package servlets;
 
-import dao.UsersDao;
+import Controller.UserController;
 import java.io.IOException;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/login")
 public class UsersServlet extends HttpServlet {
 
+//    @EJB
+//    private UsersDao usersDao;
     @EJB
-    private UsersDao usersDao;
+    private UserController userController;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -23,23 +25,15 @@ public class UsersServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
-
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String email = request.getParameter("email");
-        String password = request.getParameter("password");
-
-        try {
-            request.login(email, password);
-
-            String currentLoggedUserEmail = request.getRemoteUser();
-
+        if (userController.Authenticate(request)) {
             response.sendRedirect("http://localhost:8080/HR-war/positions");
-        } catch (ServletException e) {
+        } else {
             response.sendRedirect("http://localhost:8080/HR-war/error");
         }
     }

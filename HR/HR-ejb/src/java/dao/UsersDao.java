@@ -1,6 +1,6 @@
 package dao;
 
-import Entity.Users;
+import Entity.User.Users;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -36,6 +36,14 @@ public class UsersDao extends Dao<Users> {
     @Override
     public List<Users> getAll() {
         return entityManager.createNamedQuery("Users.findAll").getResultList();
+    }
+    
+    public Users findByEmail(String email){
+        Query query = entityManager.createNamedQuery("Users.findByEmail");
+        query.setParameter("email", email);
+        
+        Users user = (Users) query.getResultList().get(0);
+        return user;
     }
     
     public int findByEmailAndUsername(String email, String username) {

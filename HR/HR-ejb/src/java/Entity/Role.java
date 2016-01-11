@@ -1,5 +1,6 @@
 package Entity;
 
+import Entity.User.Users;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;

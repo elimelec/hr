@@ -1,5 +1,7 @@
-package Entity;
+package Entity.User;
 
+import Entity.Position;
+import Entity.Role;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -94,10 +96,15 @@ public class Users implements Serializable {
         this.iduser = iduser;
     }
 
-    public Users(Integer iduser, String email, String username) {
-        this.iduser = iduser;
+    public Users(String email, String username, String permisiuni, String fistName, String lastName, String telephone, String mobile, String description) {
         this.email = email;
         this.username = username;
+        this.permisiuni = permisiuni;
+        this.description = description;
+        this.firstname = fistName;
+        this.lastname = lastName;
+        this.telephone = telephone;
+        this.mobile = mobile;
     }
 
     public Integer getIduser() {
@@ -222,5 +229,5 @@ public class Users implements Serializable {
     public String toString() {
         return "HREntity.Users[ iduser=" + iduser + " ]";
     }
-    
+
 }

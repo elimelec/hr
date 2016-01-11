@@ -19,7 +19,6 @@ public class CvListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //         request.setAttribute("candidates", candidate.getAll());
-//        request.setAttribute("candidates", "");
         getServletContext().getRequestDispatcher("/WEB-INF/pages/CV-listing.jsp").forward(request, response);
     }
 }

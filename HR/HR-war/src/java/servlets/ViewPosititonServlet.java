@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/reviewPosition")
 public class ViewPosititonServlet extends HttpServlet {
 
-   @EJB  
+    @EJB
     private CandidateDao candidateDao;
 
     @Override
@@ -22,27 +22,26 @@ public class ViewPosititonServlet extends HttpServlet {
 //        request.setAttribute("candidates", "");
         getServletContext().getRequestDispatcher("/WEB-INF/pages/view-position.jsp").forward(request, response);
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //         request.setAttribute("candidates", candidateDao.getAll());
         String viewComm = request.getParameter("viewComments");
         String viewCVs = request.getParameter("viewCVs");
-         String edit =   request.getParameter("edit");
-           String back =  request.getParameter("back");
-        
-        if(viewComm.equals("View Comments")) {
+        String edit = request.getParameter("edit");
+        String back = request.getParameter("back");
+
+        if (viewComm.equals("View Comments")) {
         }
-        if(viewCVs.equals("View CVs")){
+        if (viewCVs.equals("View CVs")) {
         }
-         if(edit.equals("Edit")){
+        if (edit.equals("Edit")) {
         }
-        if(back.equals("Back")){
+        if (back.equals("Back")) {
         }
-        
-     //   getServletContext().getRequestDispatcher("/WEB-INF/pages/CV-details.jsp").forward(request, response);
+
+        //   getServletContext().getRequestDispatcher("/WEB-INF/pages/CV-details.jsp").forward(request, response);
     }
-
-
 
 }

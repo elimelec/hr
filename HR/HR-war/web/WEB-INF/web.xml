@@ -25,7 +25,7 @@
         </web-resource-collection>
         <auth-constraint>
             <description/>
-            <role-name>DIRECTOR</role-name>
+            <role-name>ADMINISTRATOR</role-name>
         </auth-constraint>
     </security-constraint>
 

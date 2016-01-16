@@ -34,7 +34,7 @@ public class CandidateDao extends Dao<Candidate> {
 
     @Override
     public List<Candidate> getAll() {
-        return entityManager.createNamedQuery("Cv.findAll").getResultList();
+        return entityManager.createNamedQuery("Candidate.findAll").getResultList();
     }
 
 }

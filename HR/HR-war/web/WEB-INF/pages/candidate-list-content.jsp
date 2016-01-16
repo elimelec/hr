@@ -6,14 +6,18 @@
 <table>
 	<tr>
             <th>ID</th>
-            <th>CV</th>
+            <th>Candidate Name</th>
 	</tr>
 	
 	<c:forEach var="candidate" items="${candidates}">
 		<tr>
                     <td>${candidate.idcandidate}</td>
-                    <td><a href="${pageContext.request.contextPath}/cv?id=${candidate.idcandidate}">${candidate.cv}</a></td>
+                    <td class="text-left"><a href="${pageContext.request.contextPath}/reviewCv?id=${candidate.idcandidate}">${candidate.lastname}</a></td>
 		</tr>
 	</c:forEach>
 </table>
+
+
+
+
 

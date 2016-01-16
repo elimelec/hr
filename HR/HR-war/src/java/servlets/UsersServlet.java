@@ -1,6 +1,7 @@
 package servlets;
 
 import Controller.UserController;
+import Entity.User.Users;
 import java.io.IOException;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -32,7 +33,13 @@ public class UsersServlet extends HttpServlet {
             throws ServletException, IOException {
 
         if (userController.Authenticate(request)) {
-            response.sendRedirect("http://localhost:8080/HR-war/positions");
+            Users user = userController.getCurrentLoggedUser(request);
+            if ("ADMINISTRATOR".equals(user.getPermisiuni())) {
+                response.sendRedirect("http://localhost:8080/HR-war/admin/users-list");
+            }
+            else {
+                response.sendRedirect("http://localhost:8080/HR-war/positions");
+            }
         } else {
             response.sendRedirect("http://localhost:8080/HR-war/error");
         }

@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-    <servlet>
-        <servlet-name>PositionListServlet</servlet-name>
-        <servlet-class>servlets.PositionListServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>PositionListServlet</servlet-name>
-        <url-pattern>/positions</url-pattern>
-    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
 
-    <security-constraint>
-        <display-name>Constraint1</display-name>
+<!--    <security-constraint>
+        <display-name>ADMIN Constraint</display-name>
         <web-resource-collection>
-            <web-resource-name>POSITIONS</web-resource-name>
+            <web-resource-name>ADMIN Constraint</web-resource-name>
             <description/>
-            <url-pattern>/positions</url-pattern>
+            <url-pattern>/admin/add-user</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>
         <auth-constraint>
             <description/>
-            <role-name>DIRECTOR</role-name>
+            <role-name>ADMINISTRATOR</role-name>
+        </auth-constraint>
+    </security-constraint>-->
+
+
+    <security-constraint>
+        <display-name>DIRECTOR DEPARTAMENT Constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>DIRECTOR DEPARTAMENT Constraint</web-resource-name>
+            <description/>
+            <url-pattern>/add-edit-position</url-pattern>
+            <url-pattern>/cvs</url-pattern>
+            <url-pattern>/reviewCv</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>DIRECTOR DEPARTAMENT</role-name>
         </auth-constraint>
     </security-constraint>
-
+    
+    
 </web-app>

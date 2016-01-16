@@ -9,9 +9,33 @@
     </jsp-config>
   
     <security-role-mapping>
-        <role-name>DIRECTOR</role-name>
-        <principal-name>DIRECTOR</principal-name>
-        <group-name>DIRECTOR</group-name>
+        <role-name>DIRECTOR GENERAL</role-name>
+        <principal-name>DIRECTOR GENERAL</principal-name>
+        <group-name>DIRECTOR GENERAL</group-name>
+    </security-role-mapping>
+    
+    <security-role-mapping>
+        <role-name>DIRECTOR HR</role-name>
+        <principal-name>DIRECTOR HR</principal-name>
+        <group-name>DIRECTOR HR</group-name>
+    </security-role-mapping>
+    
+    <security-role-mapping>
+        <role-name>DIRECTOR DEPARTAMENT</role-name>
+        <principal-name>DIRECTOR DEPARTAMENT</principal-name>
+        <group-name>DIRECTOR DEPARTAMENT</group-name>
     </security-role-mapping>
   
+    <security-role-mapping>
+        <role-name>ADMINISTRATOR</role-name>
+        <principal-name>ADMINISTRATOR</principal-name>
+        <group-name>ADMINISTRATOR</group-name>
+    </security-role-mapping>
+    
+    <security-role-mapping>
+        <role-name>RECRUITER</role-name>
+        <principal-name>RECRUITER</principal-name>
+        <group-name>RECRUITER</group-name>
+    </security-role-mapping>
+    
 </glassfish-web-app>

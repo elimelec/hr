@@ -18,7 +18,7 @@
     <br>
     
     <label for="role">Role: </label>
-    <input type="text" name="role" value="${user.permisiuni}"/>    
+    <input type="radio" name="role" value="DIRECTOR DEPARTAMENT" checked="true"/>DIRECTOR DEPARTAMENT   
     <br>
     
     <label for="description">Description: </label>

@@ -7,7 +7,7 @@
         </session-timeout>
     </session-config>
 
-    <security-constraint>
+<!--    <security-constraint>
         <display-name>ADMIN Constraint</display-name>
         <web-resource-collection>
             <web-resource-name>ADMIN Constraint</web-resource-name>
@@ -20,7 +20,7 @@
             <description/>
             <role-name>ADMINISTRATOR</role-name>
         </auth-constraint>
-    </security-constraint>
+    </security-constraint>-->
 
 
     <security-constraint>

@@ -43,7 +43,7 @@ public class CvDetailsServlet extends HttpServlet {
             candidate.update(c);
         }
         if (comment.equals("All comments")) {
-            response.sendRedirect("");
+            response.sendRedirect("http://localhost:8080/HR-war/cv-comments.jsp");
         }
         if (back.equals("Back")) {
             response.sendRedirect("");

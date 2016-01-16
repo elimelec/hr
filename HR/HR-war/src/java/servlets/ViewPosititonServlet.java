@@ -33,12 +33,16 @@ public class ViewPosititonServlet extends HttpServlet {
         String back = request.getParameter("back");
 
         if (viewComm.equals("View Comments")) {
+             response.sendRedirect("http://localhost:8080/HR-war/view-coments.jsp");
         }
         if (viewCVs.equals("View CVs")) {
+             response.sendRedirect("http://localhost:8080/HR-war/view-cv-content.jsp");
         }
         if (edit.equals("Edit")) {
+             response.sendRedirect("http://localhost:8080/HR-war/add-edit-position.jsp");
         }
         if (back.equals("Back")) {
+             response.sendRedirect("http://localhost:8080/HR-war/");
         }
 
         //   getServletContext().getRequestDispatcher("/WEB-INF/pages/CV-details.jsp").forward(request, response);

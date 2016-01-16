@@ -17,7 +17,7 @@
             <tr>
                 <td class="text-left">${user.iduser}</td>
                 <td class="text-left">${user.email}</td>
-                <td class="text-left"><a href="${pageContext.request.contextPath}/position-comments?position=${user.iduser}">Edit User</a></td>
+                <td class="text-left"><a href="${pageContext.request.contextPath}/admin/edit-user?id=${user.iduser}">Edit User</a></td>
                 <td class="text-left"><a href="${pageContext.request.contextPath}/admin/delete-user?id=${user.iduser}">Delete User</a></td>
             </tr>
         </c:forEach>               

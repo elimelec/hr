@@ -17,10 +17,6 @@
     <input type="email" name="email" value="${user.email}"/>    
     <br>
     
-    <label for="password">Password: </label>
-    <input type="password" name="password"/>    
-    <br>
-    
     <label for="role">Role: </label>
     <input type="text" name="role" value="${user.permisiuni}"/>    
     <br>

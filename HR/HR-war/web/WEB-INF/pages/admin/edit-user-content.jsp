@@ -22,7 +22,7 @@
     <br>
     
     <label for="role">Role: </label>
-    <input type="text" name="role"/>    
+    <input type="text" name="role" value="${user.permisiuni}"/>    
     <br>
     
     <label for="description">Description: </label>

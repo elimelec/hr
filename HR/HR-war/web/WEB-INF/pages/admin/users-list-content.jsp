@@ -8,6 +8,7 @@
         <tr>
             <th class="text-left">ID</th>
             <th class="text-left">Email</th>
+            <th class="text-left">Role</th>
             <th class="text-left">Edit</th>
             <th class="text-left">Delete</th>
         </tr>
@@ -17,6 +18,7 @@
             <tr>
                 <td class="text-left">${user.iduser}</td>
                 <td class="text-left">${user.email}</td>
+                <td class="text-left">${user.permisiuni}</td>
                 <td class="text-left"><a href="${pageContext.request.contextPath}/admin/edit-user?id=${user.iduser}">Edit User</a></td>
                 <td class="text-left"><a href="${pageContext.request.contextPath}/admin/delete-user?id=${user.iduser}">Delete User</a></td>
             </tr>

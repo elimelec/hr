@@ -1,9 +1,12 @@
 package servlets;
 
 import Entity.Candidate;
+import Entity.User.Users;
 import dao.CandidateDao;
+import dao.UsersDao;
+import email.EmailSender;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.List;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +19,11 @@ public class ApplyForPositionServlet extends HttpServlet {
 
     @EJB
     private CandidateDao candidateDao;
+    
+    @EJB
+    private UsersDao usersDao;
+    
+    private EmailSender emailSender;
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -45,8 +53,24 @@ public class ApplyForPositionServlet extends HttpServlet {
         candidate.setAccepted(Boolean.FALSE);
         
         candidateDao.add(candidate);
-        response.sendRedirect("http://localhost:8080/HR-war/positions");
         
+        String message = "Candidate " + firstname + " " + lastname + " email( " + email + " ), has applied for a job."; 
+        sendMailToDirector(message);
+        
+        response.sendRedirect("http://localhost:8080/HR-war/positions");        
+    }
+    
+    private void sendMailToDirector(String message) {
+        List<Users> users = usersDao.getAll();
+        if(!users.isEmpty()) {            
+            for(Users departmentDirector : users) {        
+//                if("DIRECTOR DEPARTAMENT".equals(departmentDirector.getPermisiuni()) || "RECRUITER".equals(departmentDirector.getPermisiuni())) {                        
+                if("DIRECTOR DEPARTAMENT".equals(departmentDirector.getPermisiuni())) {                        
+                    emailSender = new EmailSender();
+                    emailSender.send(departmentDirector.getEmail(), "New candidate has applied for a job", message);
+                }
+            }        
+        }
     }
 
 }

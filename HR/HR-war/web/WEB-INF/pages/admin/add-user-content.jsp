@@ -23,6 +23,7 @@
     
     <label for="role">Role: </label>
     <input type="radio" name="role" value="DIRECTOR DEPARTAMENT" checked="true"/>DIRECTOR DEPARTAMENT   
+    <input type="radio" name="role" value="ADMINISTRATOR"/>ADMINISTRATOR   
     <br>
     
     <label for="description">Description: </label>

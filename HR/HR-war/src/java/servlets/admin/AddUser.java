@@ -39,7 +39,7 @@ public class AddUser extends HttpServlet {
                 .createUsers();
         userController.addUser(newUser);
 
-        response.sendRedirect("http://localhost:8080/HR-war/admin/add-user");
+        response.sendRedirect("http://localhost:8080/HR-war/admin/users-list");
     }
 
     @Override

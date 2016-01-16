@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class UsersServlet extends HttpServlet {
@@ -16,7 +17,7 @@ public class UsersServlet extends HttpServlet {
 //    private UsersDao usersDao;
     @EJB
     private UserController userController;
-
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     }
@@ -31,7 +32,10 @@ public class UsersServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        if (userController.Authenticate(request)) {
+        if (userController.Authenticate(request)) {    
+            HttpSession session = request.getSession();
+            session.setAttribute("viewer", false);
+            
             response.sendRedirect("http://localhost:8080/HR-war/positions");
         } else {
             response.sendRedirect("http://localhost:8080/HR-war/error");

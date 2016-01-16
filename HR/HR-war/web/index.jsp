@@ -28,7 +28,10 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                    <div>
+                        <a style="color: black;" href="${pageContext.request.contextPath}/positions">Go directly to available positions</a>    
+                    </div>
+                </div>                
             </div>
         </div>
 

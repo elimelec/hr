@@ -23,7 +23,7 @@
     <security-role-mapping>
         <role-name>DIRECTOR DEPARTAMENT</role-name>
         <principal-name>DIRECTOR DEPARTAMENT</principal-name>
-        <group-name>DIRECTOR HDEPARTAMENT</group-name>
+        <group-name>DIRECTOR DEPARTAMENT</group-name>
     </security-role-mapping>
   
     <security-role-mapping>

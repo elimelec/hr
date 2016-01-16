@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/positions/")
+@WebServlet("/positions")
 //@WebServlet(name = "PositionServlet", urlPatterns = {"/positions/"})
 public class PositionListServlet extends HttpServlet {
 

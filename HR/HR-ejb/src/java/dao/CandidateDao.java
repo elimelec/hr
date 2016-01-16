@@ -40,7 +40,7 @@ public class CandidateDao extends Dao<Candidate> {
 
     @Override
     public List<Candidate> getAll() {
-        return entityManager.createNamedQuery("Cv.findAll").getResultList();
+        return entityManager.createNamedQuery("Candidate.findAll").getResultList();
     }
     public List<CandidateComment> getAllComments(Integer candidateId) {
         return entityManager.createNamedQuery("CandidateComment.findByCaniddateId").setParameter("candidateId", candidateId).getResultList();

@@ -18,7 +18,8 @@
     <br>
     
     <label for="role">Role: </label>
-    <input type="text" name="role" value="${user.permisiuni}"/>    
+    <input type="radio" name="role" value="DIRECTOR DEPARTAMENT" <c:if test="${user.permisiuni eq 'DIRECTOR DEPARTAMENT'}">checked="true"</c:if>/>DIRECTOR DEPARTAMENT   
+    <input type="radio" name="role" value="ADMINISTRATOR" <c:if test="${user.permisiuni eq 'ADMINISTRATOR'}">checked="true"</c:if> />ADMINISTRATOR 
     <br>
     
     <label for="description">Description: </label>

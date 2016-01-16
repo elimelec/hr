@@ -37,6 +37,10 @@ import javax.xml.bind.annotation.XmlTransient;
 public class Candidate implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
+    public static Object getAll() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     @Id
     @Basic(optional = false)
     @NotNull

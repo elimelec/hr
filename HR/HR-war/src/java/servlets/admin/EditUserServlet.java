@@ -47,6 +47,7 @@ public class EditUserServlet extends HttpServlet {
             user.setDescription(request.getParameter("description"));
             user.setMobile(request.getParameter("mobile"));
             user.setTelephone(request.getParameter("telephone"));
+            user.setPermisiuni(request.getParameter("role"));
             usersDao.update(user);
             response.sendRedirect("http://localhost:8080/HR-war/admin/users-list");
         }  

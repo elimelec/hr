@@ -4,4 +4,6 @@
             <img src="${pageContext.request.contextPath}/resources/logo.png"/>
         </a>
     </button>
+
+    <a class="btn" href="${pageContext.request.contextPath}/logout">Log Out</a>
 </div>

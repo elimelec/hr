@@ -187,6 +187,14 @@ public class Users implements Serializable {
         this.deleted = deleted;
     }
 
+    public String getPermisiuni() {
+        return permisiuni;
+    }
+
+    public void setPermisiuni(String permisiuni) {
+        this.permisiuni = permisiuni;
+    }
+
     @XmlTransient
     public Collection<Role> getRoleCollection() {
         return roleCollection;

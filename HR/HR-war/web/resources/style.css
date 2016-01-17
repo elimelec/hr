@@ -16,6 +16,10 @@ body {
   background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
   color: #777;
 }
+div.container div {
+    color: #FFFFFF;
+}
+
 img {
   vertical-align: middle;
   max-width: 100%;
@@ -31,6 +35,22 @@ a {
     text-decoration: none;
 }
 
+p, ol {
+    color: #FFFFFF;
+}
+
+div.container div.detail {
+    background: #ebebeb none repeat scroll 0 0;
+    color: #666b85;
+    height: 60px;
+    text-align: center;
+    min-width: 250px;
+}
+
+form input, form textarea {
+    background: #ebebeb none repeat scroll 0 0;
+    margin-top: 15px;
+}
 /* Container */
 .container {
   position: absolute;
@@ -109,8 +129,13 @@ a {
 /* Form */
 .field {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 2em; 
 }
+
+label {    
+  color: #FFFFFF;
+}
+
 .label {
   position: absolute;
   height: 2rem;
@@ -119,6 +144,7 @@ a {
   color: #999;
   transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .input {
   width: 100%;
   font-size: 100%;

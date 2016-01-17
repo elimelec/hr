@@ -5,9 +5,8 @@
  */
 package servlets.admin;
 
-import dao.UsersDao;
+import Controller.UserController;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,18 +18,18 @@ import javax.servlet.http.HttpServletResponse;
 public class DeleteUserServlet extends HttpServlet {
 
     @EJB
-    UsersDao usersDao;
+    UserController userController;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String sId = request.getParameter("id");
-        if (sId == null) {
-            response.sendRedirect("http://localhost:8080/HR-war/admin/users-list");
-        } else {
-            int id = Integer.parseInt(sId);
-            usersDao.delete(id);
-            response.sendRedirect("http://localhost:8080/HR-war/admin/users-list");
+        try {
+            userController.removeUser(Integer.parseInt(sId));
+        } catch (Exception e) {
         }
+
+        response.sendRedirect("http://localhost:8080/HR-war/admin/users-list");
+
     }
 }

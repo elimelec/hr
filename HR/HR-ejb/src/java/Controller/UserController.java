@@ -75,4 +75,11 @@ public class UserController {
             return false;
         }
     }
+
+    public void removeUser(Integer id) {
+        try {
+            userDao.delete(id);
+        } catch (Exception e) {
+        }
+    }
 }

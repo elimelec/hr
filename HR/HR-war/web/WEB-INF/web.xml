@@ -12,8 +12,10 @@
         <web-resource-collection>
             <web-resource-name>ADMIN Constraint</web-resource-name>
             <description/>
-            <url-pattern>/admin/users-list</url-pattern>
+            <url-pattern>/admin/add-user</url-pattern>
             <url-pattern>/admin/delete-user</url-pattern>
+            <url-pattern>/admin/edit-user</url-pattern>
+            <url-pattern>/admin/users-list</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>
@@ -30,8 +32,12 @@
             <web-resource-name>DIRECTOR DEPARTAMENT Constraint</web-resource-name>
             <description/>
             <url-pattern>/add-edit-position</url-pattern>
-            <url-pattern>/cvs</url-pattern>
+            <url-pattern>/cv-comments</url-pattern>
             <url-pattern>/reviewCv</url-pattern>
+            <url-pattern>/cvs</url-pattern>
+            <url-pattern>/position-comments</url-pattern>
+            <url-pattern>/reviewCv</url-pattern>
+            <url-pattern>/reviewPosition</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>

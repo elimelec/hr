@@ -35,7 +35,6 @@
             <url-pattern>/cv-comments</url-pattern>
             <url-pattern>/reviewCv</url-pattern>
             <url-pattern>/cvs</url-pattern>
-            <url-pattern>/position-comments</url-pattern>
             <url-pattern>/reviewCv</url-pattern>
             <url-pattern>/reviewPosition</url-pattern>
             <http-method>GET</http-method>

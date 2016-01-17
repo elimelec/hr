@@ -207,7 +207,8 @@ input:valid + .label {
 }
 
 .top_margin {
-    margin-top: 60px;
+    margin-top: 100px;
+    /*margin-top: 200px;*/
 }
 div.table-title {
    display: block;
@@ -225,6 +226,7 @@ div.table-title {
    font-family: "Roboto", helvetica, arial, sans-serif;
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;
+   margin-top: 100px;
 }
 
 

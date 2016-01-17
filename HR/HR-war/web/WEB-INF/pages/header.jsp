@@ -5,5 +5,5 @@
         </a>
     </button>
 
-    <a class="btn" href="${pageContext.request.contextPath}/logout">Log Out</a>
+    <a class="btn" href="${pageContext.request.contextPath}/logout" style=" border-radius: 76%;">Log Out</a>
 </div>

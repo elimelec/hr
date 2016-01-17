@@ -16,9 +16,9 @@
             </tr>
         </thead>
         <tbody class="table-hover">	
-            <c:forEach var="position" items="${positions}">
+            <c:forEach var="position" items="${positions}" varStatus="counter">
                     <tr>
-                        <td class="text-left">${position.idposition}</td>
+                        <td class="text-left">${counter.count}</td>
                         <td class="text-left">
                             <c:choose>
                                 <c:when test="${viewer == true}">
@@ -35,5 +35,8 @@
         </tbody>
     </table>
     
-    <a class="btn" href="${pageContext.request.contextPath}/add-edit-position">Add Position</a>    
+    <c:if test="${viewer != true}">
+        <a class="btn" href="${pageContext.request.contextPath}/add-edit-position">Add Position</a>    
+        <a class="btn" href="${pageContext.request.contextPath}/cvs">View CVs</a>    
+    </c:if>
 </div>

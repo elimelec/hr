@@ -43,7 +43,7 @@ public class CandidateDao extends Dao<Candidate> {
         return entityManager.createNamedQuery("Candidate.findAll").getResultList();
     }
     public List<CandidateComment> getAllComments(Integer candidateId) {
-        return entityManager.createNamedQuery("CandidateComment.findByCaniddateId").setParameter("candidateId", candidateId).getResultList();
+        return entityManager.createNamedQuery("CandidateComment.findByCandidateId").setParameter("candidateId", candidateId).getResultList();
     }
     
     

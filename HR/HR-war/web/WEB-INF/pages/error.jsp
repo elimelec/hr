@@ -15,7 +15,7 @@
   You don't have permission to view this resource!</div>
   <br>
 <div class="options" align="center">
-  <a href="${pageContext.request.contextPath}/login"><i class="fa fa-undo"></i>Go back</a>
+  <a href="${pageContext.request.contextPath}/logout"><i class="fa fa-undo"></i>Go back</a>
 </div>
 </html> 
   

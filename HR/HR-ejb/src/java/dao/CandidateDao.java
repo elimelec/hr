@@ -1,6 +1,8 @@
 package dao;
 
 import Entity.Candidate;
+import Entity.CandidateComment;
+import Entity.PositionComment;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -22,6 +24,10 @@ public class CandidateDao extends Dao<Candidate> {
         entityManager.remove(getItemById(id));
     }
 
+    public void addComment(CandidateComment comment) {
+        entityManager.persist(comment);
+    }
+    
     @Override
     public void update(Candidate candidate) {
         entityManager.merge(candidate);
@@ -34,7 +40,12 @@ public class CandidateDao extends Dao<Candidate> {
 
     @Override
     public List<Candidate> getAll() {
-        return entityManager.createNamedQuery("Cv.findAll").getResultList();
+        return entityManager.createNamedQuery("Candidate.findAll").getResultList();
     }
+    public List<CandidateComment> getAllComments(Integer candidateId) {
+        return entityManager.createNamedQuery("CandidateComment.findByCaniddateId").setParameter("candidateId", candidateId).getResultList();
+    }
+    
+    
 
 }

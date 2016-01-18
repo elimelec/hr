@@ -40,15 +40,15 @@ public class CvDetailsServlet extends HttpServlet {
             candidate.update(c);
         }
         if (accept.equals("Accept")) {
- Candidate c = candidate.getItemById(id);
- c.setAccepted(Boolean.TRUE);
+            Candidate c = candidate.getItemById(id);
+            c.setAccepted(Boolean.TRUE);
             candidate.update(c);
         }
         if (comment.equals("All comments")) {
             response.sendRedirect("http://localhost:8080/HR-war/cv-comments.jsp");
         }
         if (back.equals("Back")) {
-            response.sendRedirect("");
+            response.sendRedirect("http://localhost:8080/HR-war/");
         }
 
         //   getServletContext().getRequestDispatcher("/WEB-INF/pages/CV-details.jsp").forward(request, response);

@@ -20,6 +20,7 @@ public class ViewPosititonServlet extends HttpServlet {
             throws ServletException, IOException {
 //         request.setAttribute("candidates", candidateDao.getAll());
 //        request.setAttribute("candidates", "");
+
         getServletContext().getRequestDispatcher("/WEB-INF/pages/view-position.jsp").forward(request, response);
     }
 
@@ -27,22 +28,25 @@ public class ViewPosititonServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //         request.setAttribute("candidates", candidateDao.getAll());
-        String viewComm = request.getParameter("viewComments");
-        String viewCVs = request.getParameter("viewCVs");
-        String edit = request.getParameter("edit");
-        String back = request.getParameter("back");
+        String viewComm = request.getParameter("action");
+        String viewCVs = viewComm;// request.getParameter("viewCVs");
+        String edit = viewComm;// request.getParameter("edit");
+        String back = viewComm;//request.getParameter("back");
 
         if (viewComm.equals("View Comments")) {
-             response.sendRedirect("http://localhost:8080/HR-war/view-coments.jsp");
+            //      getServletContext().getRequestDispatcher("/WEB-INF/pages/view-comments.jsp").forward(request, response);
+            response.sendRedirect("http://localhost:8080/HR-war/reviewCv");
         }
         if (viewCVs.equals("View CVs")) {
-             response.sendRedirect("http://localhost:8080/HR-war/view-cv-content.jsp");
+            //  getServletContext().getRequestDispatcher("/WEB-INF/pages/view-cv-content.jsp").forward(request, response);
+            response.sendRedirect("http://localhost:8080/HR-war/cvs");
         }
         if (edit.equals("Edit")) {
-             response.sendRedirect("http://localhost:8080/HR-war/add-edit-position.jsp");
+            response.sendRedirect("http://localhost:8080/HR-war/add-edit-position");
+            // getServletContext().getRequestDispatcher("/WEB-INF/pages/view-add-edit-position.jsp").forward(request, response);
         }
         if (back.equals("Back")) {
-             response.sendRedirect("http://localhost:8080/HR-war/");
+            response.sendRedirect("http://localhost:8080/HR-war/");
         }
 
         //   getServletContext().getRequestDispatcher("/WEB-INF/pages/CV-details.jsp").forward(request, response);

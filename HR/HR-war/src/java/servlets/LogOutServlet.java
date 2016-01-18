@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "LogOutServlet", urlPatterns = {"/logout"})
 public class LogOutServlet extends HttpServlet {
@@ -20,6 +21,8 @@ public class LogOutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         userController.LogOut(request);
+        HttpSession session = request.getSession();
+        session.removeAttribute("viewer");
         response.sendRedirect("http://localhost:8080/HR-war/");
     }
 

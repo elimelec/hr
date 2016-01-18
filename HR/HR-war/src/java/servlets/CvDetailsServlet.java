@@ -15,11 +15,21 @@ public class CvDetailsServlet extends HttpServlet {
 
     @EJB
     private CandidateDao candidate;
-
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//         request.setAttribute("candidates", candidateDao.getAll());
+        
+        String queryStringId = request.getParameter("id"); 
+        if(queryStringId == null) {
+            response.sendRedirect("http://localhost:8080/HR-war/error");
+        }
+        
+        Integer id = Integer.parseInt(queryStringId);
+        Candidate c = candidate.getItemById(id);
+        
+        request.setAttribute("candidate", c);
+        
         getServletContext().getRequestDispatcher("/WEB-INF/pages/cv-details.jsp").forward(request, response);
     }
 

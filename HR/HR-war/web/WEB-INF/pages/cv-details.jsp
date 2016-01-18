@@ -14,7 +14,7 @@
                 <td> </td>
             </tr>
             <tr>
-                <td> Aici punem cv ul</td>
+                <td> ${candidate.cv}</td>
                 <td>
                     <form action="reviewCv" method="POST">
                         <table>

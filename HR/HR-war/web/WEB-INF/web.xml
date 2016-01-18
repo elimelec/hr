@@ -12,7 +12,6 @@
         <web-resource-collection>
             <web-resource-name>ADMIN Constraint</web-resource-name>
             <description/>
-            <url-pattern>/admin/add-user</url-pattern>
             <url-pattern>/admin/delete-user</url-pattern>
             <url-pattern>/admin/edit-user</url-pattern>
             <url-pattern>/admin/users-list</url-pattern>
